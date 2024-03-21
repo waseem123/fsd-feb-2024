@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* selector::pseudo-element{
+            property:value;
+        } */
+        #p1::first-letter{
+            font-size: 64px;
+            color: red;
+            background-color: darkblue;
+        }
+
+        #p2::first-line{
+            font-size: 24px;
+            font-family: cursive;
+        }
+
+        p::after{
+            content: "🔥";
+        }
+        p::before{
+            content: "🤣=";
+        }
+
+        ::marker{
+            color: red;
+        }
+
+        #p1::selection{
+            background-color: darkcyan;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>First Letter</li>
+        <li>First Line</li>
+        <li>Before</li>
+        <li>After</li>
+        <li>Marker</li>
+        <li>Selection</li>
+    </ul>
+    <p id="p1">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, natus aperiam! Nesciunt eaque et maxime praesentium distinctio voluptatibus, tempora fuga facere sunt, natus omnis hic exercitationem expedita, consequatur officia quam.
+    </p>
+
+    <p id="p2">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, natus aperiam! Nesciunt eaque et maxime praesentium distinctio voluptatibus, tempora fuga facere sunt, natus omnis hic exercitationem expedita, consequatur officia quam.
+    </p>
+
+    <p id="p3">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, natus aperiam! Nesciunt eaque et maxime praesentium distinctio voluptatibus, tempora fuga facere sunt, natus omnis hic exercitationem expedita, consequatur officia quam.
+    </p>
+</body>
+</html>
